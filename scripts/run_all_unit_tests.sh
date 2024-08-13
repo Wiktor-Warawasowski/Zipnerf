@@ -11,8 +11,6 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-
 #!/bin/bash
-
 # Run all tests in the "tests/" folder with a filename ending with "_tests.py".
 python3 -m unittest discover -s "tests" -p '*_test.py'

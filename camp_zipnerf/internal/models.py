@@ -37,7 +37,7 @@ from jax import random
 import jax.numpy as jnp
 import ml_collections
 
-
+gin.enter_interactive_mode()
 gin.config.external_configurable(math.safe_exp, module='math')
 gin.config.external_configurable(math.laplace_cdf, module='math')
 gin.config.external_configurable(math.scaled_softplus, module='math')
