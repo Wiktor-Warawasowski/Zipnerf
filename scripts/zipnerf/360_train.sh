@@ -11,14 +11,16 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-
+#
 #!/bin/bash
 # Script for training on the 360 dataset.
 
 export CUDA_VISIBLE_DEVICES=0
 
-DATA_DIR=/usr/local/google/home/barron/data/nerf_real_360
-CHECKPOINT_DIR=~/tmp/zipnerf/360
+#DATA_DIR=/usr/local/google/home/barron/data/nerf_real_360
+#CHECKPOINT_DIR=~/tmp/zipnerf/360
+DATA_DIR=/mnt/c/Users/mwara/PycharmProjects/camp_zipnerf/data/nerf_real_360
+#CHECKPOINT_DIR=
 
 # Outdoor scenes.
 for SCENE in bicycle flowerbed gardenvase stump treehill
