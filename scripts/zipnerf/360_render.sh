@@ -17,10 +17,10 @@
 
 export CUDA_VISIBLE_DEVICES=0
 
-DATA_DIR=/usr/local/google/home/barron/data/nerf_real_360
+DATA_DIR=/mnt/c/Users/mwara/PycharmProjects/camp_zipnerf/data/360
 CHECKPOINT_DIR=~/tmp/zipnerf/360
 
-for SCENE in bicycle flowerbed gardenvase stump treehill fulllivingroom kitchencounter kitchenlego officebonsai
+for SCENE in bicycle
 do
   python -m camp_zipnerf.render \
     --gin_configs=configs/zipnerf/360.gin \

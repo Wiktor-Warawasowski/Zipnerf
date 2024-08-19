@@ -123,14 +123,14 @@ if __name__ == '__main__':
 
   scene_names = [
       'bicycle',
-      'flowerbed',
-      'gardenvase',
-      'stump',
-      'treehill',
-      'fulllivingroom',
-      'kitchencounter',
-      'kitchenlego',
-      'officebonsai',
+      # 'flowerbed',
+      # 'gardenvase',
+      # 'stump',
+      # 'treehill',
+      # 'fulllivingroom',
+      # 'kitchencounter',
+      # 'kitchenlego',
+      # 'officebonsai',
   ]
 
   all_stats = []
