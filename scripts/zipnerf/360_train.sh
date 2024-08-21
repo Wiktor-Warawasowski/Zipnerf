@@ -19,8 +19,9 @@ export CUDA_VISIBLE_DEVICES=0
 
 #DATA_DIR=/usr/local/google/home/barron/data/nerf_real_360
 #CHECKPOINT_DIR=~/tmp/zipnerf/360
-DATA_DIR=/mnt/c/Users/mwara/PycharmProjects/camp_zipnerf/data/360
-CHECKPOINT_DIR=~/tmp/zipnerf/360
+#DATA_DIR=/mnt/c/Users/mwara/PycharmProjects/camp_zipnerf/data/360
+DATA_DIR=./data/360
+CHECKPOINT_DIR=./tmp/360
 
 # Outdoor scenes.
 for SCENE in bicycle
