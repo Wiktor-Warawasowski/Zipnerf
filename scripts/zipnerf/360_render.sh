@@ -20,7 +20,7 @@ export CUDA_VISIBLE_DEVICES=0
 #DATA_DIR=/mnt/c/Users/mwara/PycharmProjects/camp_zipnerf/data/360
 #CHECKPOINT_DIR=~/tmp/zipnerf/360
 DATA_DIR=./data/360
-CHECKPOINT_DIR=./tmp/360
+CHECKPOINT_DIR=/zipnerf/tmp/360
 
 for SCENE in bicycle
 do
@@ -31,5 +31,4 @@ do
     --gin_bindings="Config.render_dir = '${CHECKPOINT_DIR}/${SCENE}/render/'" \
     --gin_bindings="Config.render_path = True" \
     --gin_bindings="Config.render_path_frames = 480" \
-    --gin_bindings="Config.render_video_fps = 60"
-done
+    --gin_bindings="Config.render_video_fps = 6

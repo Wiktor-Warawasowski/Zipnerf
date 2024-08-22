@@ -20,7 +20,7 @@ export CUDA_VISIBLE_DEVICES=0
 #DATA_DIR=/mnt/c/Users/mwara/PycharmProjects/camp_zipnerf/data/360
 #CHECKPOINT_DIR=~/tmp/zipnerf/360
 DATA_DIR=./data/360
-CHECKPOINT_DIR=./tmp/360
+CHECKPOINT_DIR=/zipnerf/tmp/360
 
 # Outdoor scenes.
 for SCENE in bicycle
@@ -38,5 +38,4 @@ done
 #    --gin_configs=configs/zipnerf/360.gin \
 #    --gin_bindings="Config.data_dir = '${DATA_DIR}/${SCENE}'" \
 #    --gin_bindings="Config.checkpoint_dir = '${CHECKPOINT_DIR}/${SCENE}'" \
-#    --gin_bindings="Config.factor = 2" # Important change from outdoor data
-#done
+#    --gin_bindings="Config.factor = 2" # Important change from outdoor dat
