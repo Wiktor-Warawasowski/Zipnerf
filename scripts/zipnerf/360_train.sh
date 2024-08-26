@@ -40,3 +40,4 @@ done
 #    --gin_bindings="Config.data_dir = '${DATA_DIR}/${SCENE}'" \
 #    --gin_bindings="Config.checkpoint_dir = '${CHECKPOINT_DIR}/${SCENE}'" \
 #    --gin_bindings="Config.factor = 2" # Important change from outdoor data
+#done

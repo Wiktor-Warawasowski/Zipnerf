@@ -138,7 +138,7 @@ if __name__ == '__main__':
   for model_path, (_, num_iters) in models_meta.items():
     scene_stats = []
     for scene_name in scene_names:
-      folder = os.path.expanduser(os.path.join(model_path, scene_name))
+      folder = os.path.expanduser(os.path.join("/zipnerf/tmp/360", scene_name))
       stats = scrape_folder(folder, num_iters)
       print(model_path, scene_name, stats)
       scene_stats.append(stats)

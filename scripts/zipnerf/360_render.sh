@@ -31,4 +31,5 @@ do
     --gin_bindings="Config.render_dir = '${CHECKPOINT_DIR}/${SCENE}/render/'" \
     --gin_bindings="Config.render_path = True" \
     --gin_bindings="Config.render_path_frames = 480" \
-    --gin_bindings="Config.render_video_fps = 6
+    --gin_bindings="Config.render_video_fps = 60"
+done
