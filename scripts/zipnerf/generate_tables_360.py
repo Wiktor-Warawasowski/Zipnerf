@@ -119,10 +119,11 @@ def render_table(names, data, precisions, rank_order, suffixes=None, hlines=[]):
 
 if __name__ == '__main__':
   models_meta = {}  # folder : latex_name
-  models_meta['~/tmp/zipnerf/360'] = 'Our Model', 200000
+  models_meta['/zipnerf/tmp/360'] = 'Our Model', 200000
 
   scene_names = [
-      'bicycle',
+      'skull'
+      # 'bicycle',
       # 'flowerbed',
       # 'gardenvase',
       # 'stump',

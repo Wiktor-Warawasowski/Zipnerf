@@ -22,7 +22,7 @@ export CUDA_VISIBLE_DEVICES=0
 DATA_DIR=./data/360
 CHECKPOINT_DIR=/zipnerf/tmp/360
 
-for SCENE in bicycle
+for SCENE in skull
 do
   python -m camp_zipnerf.render \
     --gin_configs=configs/zipnerf/360.gin \

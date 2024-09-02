@@ -24,20 +24,20 @@ DATA_DIR=./data/360
 CHECKPOINT_DIR=/zipnerf/tmp/360
 
 # Outdoor scenes.
-for SCENE in bicycle
-do
-  python -m camp_zipnerf.train \
-    --gin_configs=configs/zipnerf/360.gin \
-    --gin_bindings="Config.data_dir = '${DATA_DIR}/${SCENE}'" \
-    --gin_bindings="Config.checkpoint_dir = '${CHECKPOINT_DIR}/${SCENE}'"
-done
-
-# Indoor scenes.
-#for SCENE in fulllivingroom kitchencounter kitchenlego officebonsai
+#for SCENE in bicycle
 #do
 #  python -m camp_zipnerf.train \
 #    --gin_configs=configs/zipnerf/360.gin \
 #    --gin_bindings="Config.data_dir = '${DATA_DIR}/${SCENE}'" \
-#    --gin_bindings="Config.checkpoint_dir = '${CHECKPOINT_DIR}/${SCENE}'" \
-#    --gin_bindings="Config.factor = 2" # Important change from outdoor data
+#    --gin_bindings="Config.checkpoint_dir = '${CHECKPOINT_DIR}/${SCENE}'"
 #done
+
+ Indoor scenes.
+for SCENE in skull
+do
+  python -m camp_zipnerf.train \
+    --gin_configs=configs/zipnerf/360.gin \
+    --gin_bindings="Config.data_dir = '${DATA_DIR}/${SCENE}'" \
+    --gin_bindings="Config.checkpoint_dir = '${CHECKPOINT_DIR}/${SCENE}'" \
+    --gin_bindings="Config.factor = 2" # Important change from outdoor data
+done
