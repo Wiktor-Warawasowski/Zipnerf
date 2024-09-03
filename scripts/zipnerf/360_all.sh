@@ -13,7 +13,11 @@
 # limitations under the License.
 #
 #!/bin/bash
-./scripts/zipnerf/360_train.sh
-./scripts/zipnerf/360_eval.sh
-./scripts/zipnerf/360_render.sh
+DATA_DIR=$1
+CHECKPOINT_DIR=$2
+SCENA=$3
+
+./scripts/zipnerf/360_train.sh "$DATA_DIR" "$CHECKPOINT_DIR" "$SCENA"
+./scripts/zipnerf/360_eval.sh "$DATA_DIR" "$CHECKPOINT_DIR" "$SCENA"
+./scripts/zipnerf/360_render.sh "$DATA_DIR" "$CHECKPOINT_DIR" "$SCENA"
 python scripts/zipnerf/generate_tables_360.py 

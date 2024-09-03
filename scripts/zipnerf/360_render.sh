@@ -19,10 +19,13 @@ export CUDA_VISIBLE_DEVICES=0
 
 #DATA_DIR=/mnt/c/Users/mwara/PycharmProjects/camp_zipnerf/data/360
 #CHECKPOINT_DIR=~/tmp/zipnerf/360
-DATA_DIR=./data/360
-CHECKPOINT_DIR=/zipnerf/tmp/360
+#DATA_DIR=./data/360
+#CHECKPOINT_DIR=/zipnerf/tmp/360
+DATA_DIR=$1
+CHECKPOINT_DIR=$2
+SCENA=$3
 
-for SCENE in skull
+for SCENE in "$SCENA"
 do
   python -m camp_zipnerf.render \
     --gin_configs=configs/zipnerf/360.gin \
